@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1513519397206.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F9BE5C43",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1513519397206,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "93010FA6",
+        "caption" : "df.castle_merged",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=df.castle_merged&cache_key=93010FA6",
+        "displayedObservations" : "30710",
+        "environment" : "",
+        "object" : "df.castle_merged",
+        "preview" : "0",
+        "totalObservations" : "30710",
+        "variables" : "12"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

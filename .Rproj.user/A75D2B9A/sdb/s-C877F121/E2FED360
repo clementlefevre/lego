@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1513518719632.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E2FED360",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1513518719632,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "6A728C71",
+        "caption" : "df.inventory.castle",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=df.inventory.castle&cache_key=6A728C71",
+        "displayedObservations" : 88,
+        "environment" : "",
+        "object" : "df.inventory.castle",
+        "preview" : 0,
+        "totalObservations" : 88,
+        "variables" : 5
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

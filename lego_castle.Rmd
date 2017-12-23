@@ -1,0 +1,46 @@
+---
+title: "LEGO Castle"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(tidyverse)
+```
+
+
+load castle parts
+```{r}
+df.castle<-read.csv('data/rebrickable_parts_6075-2-castle.csv')
+str(df.castle)
+```
+
+load datasets
+```{r}
+df.inventory_parts <- read.csv('data/inventory_parts.csv')
+df.inventory<- read.csv('data/inventories.csv')
+df.sets<-read.csv('data/sets.csv')
+
+df.6075.2<- df.inventory %>% filter(set_num=="6075-2")
+df.6075.2
+
+```
+
+
+```{r}
+df.castle_merged<-left_join(df.castle,df.inventory_parts,by=c('Part'='part_num' , 'Color'='color_id'))
+df.castle_merged<-left_join(df.castle_merged,df.inventory,by=c('inventory_id'='id'))
+df.castle_merged<-left_join(df.castle_merged,df.sets,by=c('set_num'))
+
+```
+```{r}
+df.castle_merged %>% group_by(Part) %>% summarise(n())
+```
+
+```{r}
+
+```
+

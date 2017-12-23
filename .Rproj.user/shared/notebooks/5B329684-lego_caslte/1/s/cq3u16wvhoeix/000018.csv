@@ -1,0 +1,5 @@
+"0","df.inventory.castle<-df.inventory_parts %>% filter(df.inventory_parts.inventory_id==14978)
+"
+"2","Error in filter_impl(.data, quo) : 
+  object 'df.inventory_parts.inventory_id' not found
+"
