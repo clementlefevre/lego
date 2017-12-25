@@ -1,5 +1,0 @@
-"0","df.castle_merged<-left_join(df.castle,df.inventory_parts,by=c('Part'='part_num' , 'Color'='color_id'))"
-"2","Column `Part`/`part_num` joining factors with different levels, coercing to character vector"
-"0","df.castle_merged<-left_join(df.castle_merged,df.inventory,by=c('inventory_id'='id'))"
-"0","df.castle_merged<-left_join(df.castle_merged,df.sets,by=c('set_num'))"
-"2","Column `set_num` joining factors with different levels, coercing to character vector"

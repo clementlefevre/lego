@@ -1,5 +1,0 @@
-"0","df.inventory_parts <- read.csv('data/inventory_parts.csv')"
-"0","df.inventory<- read.csv('data/inventories.csv')"
-"0","df.sets<-read.csv('data/sets.csv')"
-"0","df.6075.2<- df.inventory %>% filter(set_num==""6075-2"")"
-"0","df.6075.2"

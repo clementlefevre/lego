@@ -31,13 +31,17 @@ df.6075.2
 
 
 ```{r}
-df.castle_merged<-left_join(df.castle,df.inventory_parts,by=c('Part'='part_num' , 'Color'='color_id'))
+df.castle_merged<-left_join(df.castle,df.inventory_parts,by=c('Part'='part_num' ))#, 'Color'='color_id'))
 df.castle_merged<-left_join(df.castle_merged,df.inventory,by=c('inventory_id'='id'))
 df.castle_merged<-left_join(df.castle_merged,df.sets,by=c('set_num'))
+write.csv(df.castle_merged,'data/df_castle_merged.csv')
 
+df.catalog <-left_join(df.inventory_parts,df.inventory,by=c('inventory_id'='id'))
+df.catalog<-left_join(df.catalog,df.sets,by=c('set_num'))
+write.csv(df.catalog,'data/df_catalog.csv')
 ```
 ```{r}
-df.castle_merged %>% group_by(Part) %>% summarise(n())
+groupy<-df.castle_merged %>% group_by(set_num,name,year,Part) %>% summarise('parts'=n()) %>% arrange(desc(parts))
 ```
 
 ```{r}
